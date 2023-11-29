@@ -1,0 +1,24 @@
+package Thread;
+//extends Thread
+//implements Runnable 
+
+class Task1 extends Thread {
+	public void run() { // SIGNATURE
+		for(int i=101; i<=199; i++)
+			System.out.print(i + " ");
+		
+		System.out.print("\nTask1 Done");
+		
+	}
+}
+public class ThreadBasicsRunner {
+
+	public static void main(String[] args) {
+		//Task1 
+		Task1 task1 = new Task1();
+		task1.run();
+		
+
+	}
+
+}

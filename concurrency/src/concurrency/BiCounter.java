@@ -1,0 +1,37 @@
+package concurrency;
+
+public class BiCounter {
+	private int i = 0;
+	private int j = 0;
+	// i++ is not Atomic
+	synchronized public void incrementI() {
+		i++;
+		// get i
+		// increment
+		// set i
+	}
+
+	synchronized public void incrementJ() {
+		j++;
+		// get j
+		// increment
+		// set j
+	}
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
+	public int getJ() {
+		return j;
+	}
+
+	public void setJ(int j) {
+		this.j = j;
+	}
+
+}

@@ -1,0 +1,21 @@
+package Thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorServiceRunner {
+
+	public static void main(String[] args) {
+		ExecutorService executroservice = Executors.newSingleThreadExecutor();
+
+		executroservice.execute(new Task1());
+		executroservice.execute(new Thread(new Task2()));
+		
+		//한번에 한개만 스레드 실행 가능 
+		
+
+		// TODO Auto-generated method stub
+
+	}
+
+}

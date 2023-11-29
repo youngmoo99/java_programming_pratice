@@ -1,0 +1,48 @@
+package exception;
+
+public class 예외처리 {
+
+	public static void main(String[] args) {
+		// 1. 자바에서 예외란 프로그램의 실행 중에 발생하는 이벤트로서
+		// 명령의 정상적인 흐름을 교란하는 것
+
+		// 2. 예외 ex) 프로그램의 메모리 부족, 0으로 나누기 오류
+
+		// 3. 예외처리를 하지않으면 프로그램이 갑자기 종료됨
+		// 따라서 try-catch 블록을 사용하여 예외처리
+
+		// 4. catch는 예외를 처리하기 위한 코드를 작성
+		// 5. catch 블록에서 잡히면 프로그램이 catch 블록을지나
+		// 정상적으로 계속 실횅된다.
+
+		// 6. Throwable : 자바 예외 계층구조의 루트 클래스
+
+		// 7. 자바의 모든 예외는 Exception의 서브클래스
+		// + NullPointerException 은 RuntimeException의 서브클래스
+
+		// 8. finally 블록은 예외가 발생해도 리소스가 항상 릴리즈 됨
+		// + 예외 발생 여부와 무관하게 실행됨
+
+		// 9. throws는 어떤 메서드가 특정한 타입의 예외를 낼 수 있다고 선언함에 목적
+
+		// 10. unchecked 예외 상황
+		// RuntimeException과 그것의 서브클래스들
+
+		// 11. checked 예외상황
+		// RuntimeException을 제외한 Exception의 모든 서브클래스와 RuntimeException의
+		// 서브클래스들
+
+		// 12. 사용자 지정 예외 사용시 장점
+		// 1) 발생한 오류에 관한 더 구체적인 정보를 제공
+		// 2) 자신만의 예외 계층 구조를 만들 수 있게 해줌
+		// 3) 예외를 더욱 구체적으로 잡고 처리할 수 있게 해줌
+
+		// 13. AutoCloseable
+		// try-with-resources와 호환되도록 하게하는 인터페이스
+
+		// 14. try-with-resources의 목적
+		// AutoCloseable 인터페이스를 구현하는 리소스를 자동으로 관리함
+
+	}
+
+}

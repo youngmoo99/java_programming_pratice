@@ -1,0 +1,21 @@
+package filelist;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class DirectoryScanRunner {
+
+	public static void main(String[] args) throws IOException {
+		Path currentDirectory = Paths.get(".");
+		// 현존하는 파일들과 디렉토리 모두의 리스트 출력
+
+		// Files.list(currentDirectory).forEach(System.out::println);
+
+		// 전체디렉토리 가져오기 재귀
+		//walk 콤마옆 숫자는 단계깊이
+		Files.walk(currentDirectory, 2).forEach(System.out::println);
+	}
+
+}
